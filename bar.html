@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: white;
+    }
+
+    .progress-container {
+        width: 800px;
+        max-width: 400px;
+        height: 100px;
+        background-color: white;
+        border: 5px solid orange;
+        position: relative;
+    }
+
+    .progress-bar {
+        width: 100px;  
+        height: 100px;
+        background-color: orange;
+        position: absolute;
+        animation: bounce 3s infinite;
+    }
+
+    @keyframes bounce {
+        0% {
+            left: 0;
+        }
+        50% {
+            left: 300px; 
+        }
+        100% {
+            left: 0;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="progress-container">
+    <div class="progress-bar"></div>
+</div>
+
+</body>
+</html>
